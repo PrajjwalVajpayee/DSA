@@ -62,16 +62,6 @@ using namespace std;
 //     if(a[i]>a[i+1])
 //        swap(a[i],a[i+1]);
 //     }
-//     sort(a,n-1);
-  
+//     sort(a,n-1); 
 // }
 
-int main(){
-
-   int arr[5]={2,4,8,6,1}; 
-     sort(arr,5);
-     for(int i=0;i<5;i++){
-      cout<<arr[i];
-     }
-  
-}
