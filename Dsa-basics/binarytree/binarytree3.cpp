@@ -241,4 +241,5 @@ class solution{
  */      
 int main()
 {
+    
 }
