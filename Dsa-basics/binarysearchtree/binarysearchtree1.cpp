@@ -33,21 +33,25 @@ void takeinput(Node* &root){
     }
     }
 //        :SEARCH IN A BST:
+//          :RECURSIVE WAY:
 bool searchBST(Node*root,int x){
        if(root->data==x){
         return true;
        }
-       else{
+       if(root==NULL){
           return false;
        }
        if(root->data>x){
-        searchBST(root->right,x);
+        return searchBST(root->left,x);
        }
        else{
-        searchBST(root->left,x);
+        return searchBST(root->right,x);
        }
 }
+//           :ITERATIVE WAY:
+bool searchBST(Node*root,int x){
 
+}
 int main(){
   Node*root=NULL;
   cout<<"Enter data to create BST"<<endl;
