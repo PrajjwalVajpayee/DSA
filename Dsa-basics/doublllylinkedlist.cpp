@@ -26,7 +26,7 @@ print (Node * head)
     }
   cout << endl;
 }
-
+ 
 void
 insertathead (Node * &head, int d)
 {

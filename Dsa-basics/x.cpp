@@ -229,3 +229,29 @@ int main(){
 	 }
 	
 }
+class node{
+ public:
+   int data;
+   node*prev;
+   node*next;
+   node(int d){
+     this->data=d;
+	  this->prev = NULL;
+    this->next = NULL;
+   }
+};
+node* insertathead(node*&head,int x){
+    node*temp=new node(x);
+	temp->next=head;
+	head->prev=temp;
+	head=temp;
+}
+node* insertattail(node* &tail,int x){
+	node* temp=new node(x);
+	tail->next=temp;
+	temp->prev=tail;
+	tail=temp;
+}
+node* insertatpositon(node*head,node* tail,int x){
+	
+}
